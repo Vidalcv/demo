@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas con capacidad 32</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Aulas con capacidad 32</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Clave</th>
+                <th>Nombre</th>
+                <th>Capacidad</th>
+                <th>Tipo</th>
+                <th>Proyector</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Recorrer las aulas con Thymeleaf -->
+            <tr th:each="aula : ${aulas}">
+                <td th:text="${aula.clave}"></td>
+                <td th:text="${aula.nombre}"></td>
+                <td th:text="${aula.capacidad}"></td>
+                <td th:text="${aula.tipo}"></td>
+                <td th:text="${aula.proyector}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
