@@ -22,7 +22,6 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Recorrer las aulas con Thymeleaf -->
             <tr th:each="aula : ${aulas}">
                 <td th:text="${aula.clave}"></td>
                 <td th:text="${aula.nombre}"></td>

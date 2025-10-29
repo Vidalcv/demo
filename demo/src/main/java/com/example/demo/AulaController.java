@@ -52,7 +52,7 @@ public class AulaController {
             e.printStackTrace();
         }
 
-        model.addAttribute("aulas", aulasList); // Pasar los datos a la vista
-        return "aulas"; // Nombre del archivo HTML
+        model.addAttribute("aulas", aulasList); 
+        return "aulas"; 
     }
 }
